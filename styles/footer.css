@@ -1,0 +1,46 @@
+@import url('./main.css');
+
+/* RESPONSIVE FOR 0PX UP TO 992PX VIEW WIDTH */
+/* MOBILE */
+
+.footer {
+    background-color: var(--second-color);
+    height: 4rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__h5 {
+    color: var(--third-color);
+    width: fit-content;
+}
+
+
+/* RESPONSIVE FOR 992PX AND UP VIEW WIDTH */
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+
+    .footer {
+        height: 8rem;
+    }
+
+}
+
+/* RESPONSIVE FOR DESKTOP */
+
+.footer {
+    background-color: #242635;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__p {
+    color: #34B0BE;
+    width: fit-content;
+    font-size: 16px;
+}

@@ -1,0 +1,287 @@
+@import url('./main.css');
+
+/* RESPONSIVE FOR 0PX UP TO 400PX VIEW WIDTH */
+/* MOBILE */
+
+.banner {
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.banner__info {
+    width: 90%;
+    max-width: 510px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.banner__hr--desktop {
+    display: none;
+}
+
+.banner__soy {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--mobile-h2-font-size);
+}
+
+.banner__soy, .banner__sergio {
+    display: block;
+    width: fit-content;
+}
+
+.banner__Gabriel {
+    color: var(--third-color);
+}
+
+.banner__hr--mobile {
+    background-color: var(--fifth-color);
+    width: 9.5rem;
+    margin: .5rem 0 1rem 0;
+}
+
+.banner__proffesion {
+    font-size: var(--mobile-h3-font-size);
+    font-weight: var(--font-weight-regular);
+    margin: .1rem 0;
+    display: block;
+}
+
+.banner__years {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--mobile-h3-font-size);
+    color: var(--third-color);
+    width: fit-content;
+    margin: 1rem 0 0.2rem 0;
+}
+
+.banner__experience {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--mobile-h3-font-size);
+    width: fit-content;
+}
+
+.banner__media {
+    max-width: 220px;
+    display: inline-flex;
+}
+
+.banner__social {
+    background-color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.banner__social:hover {
+    background-color: var(--third-color);
+}
+
+.banner__social:nth-child(2) {
+    margin: 0 .7rem;
+}
+
+.banner__profile {
+    width: 95%;
+    max-width: 420px;
+    margin: auto;
+    position: relative;
+}
+
+.banner__profile--img {
+    margin-top: 1rem;
+    position: relative;
+    top: 0px; left: 20px;
+}
+
+.banner__profile::before {
+    background-color: var(--second-color);
+    content: '';
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+}
+
+.references {
+    background-color: var(--second-color);
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3.5rem;
+    z-index: 20;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.references__icon {
+    background-color: var(--fourth-color);
+    padding: .2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.references__icon:hover {
+    background-color: var(--third-color);
+}
+
+.references__img {
+    width: 35px;
+}
+
+/* RESPONSIVE FOR 400PX UP TO 600PX VIEW WIDTH */
+/* MOBILE */
+
+@media only screen and (min-width: 400px) {
+
+    .banner__info {
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner__media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner__profile {
+        width: 75%;
+    }
+
+    .banner__profile--img {
+        margin-top: 0;
+        top: 0px; left: 20px;
+    }
+    
+    .banner__profile::before {
+        margin-top: 0;
+    }
+
+    .references {
+        bottom: -1.5rem;
+    }
+
+    .references__img {
+        width: 40px;
+    }
+
+}
+
+/* RESPONSIVE FOR 600PX UP TO 992PX VIEW WIDTH */
+/* MOBILE */
+
+@media only screen and (min-width: 600px) {
+
+    .references__img {
+        width: 55px;
+    }
+
+}
+
+/* RESPONSIVE FOR 992PX UP TO 1200PX VIEW WIDTH */
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+
+    .banner__info {
+        max-width: 1000px;
+    }
+
+    .banner__soy {
+        font-size: var(--desktop-h2-font-size);
+    }
+
+    .banner__hr--desktop {
+        background-color: var(--fifth-color);
+        width: 410px;
+        position: relative;
+        top: 1rem;
+        display: block;
+    }
+
+    .banner__hr--mobile {
+        display: none;
+    }
+
+    .banner__proffesion,
+    .banner__years, .banner__experience {
+        font-size: var(--desktop-h3-font-size);
+    }
+
+    .banner__social {
+        padding: 1rem;
+    }
+
+    .banner__profile {
+        max-width: 650px;
+    }
+
+    .references {
+        max-width: 850px;
+        padding: 2rem 1.5rem;
+            
+    }
+
+    .references__icon {
+        padding: .2rem 2rem;
+    }
+
+    .references__img {
+        width: 100px;
+    }
+
+    .banner__profile--img {
+        margin-top: 1rem;
+        position: relative;
+        top: 0px; left: 80px;
+    }
+
+}
+
+/* RESPONSIVE FOR 1200PX AND UP VIEW WIDTH */
+/* DESKTOP */
+
+@media only screen and (min-width: 1200px) {
+
+    .banner__info {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        position: absolute;
+        left: 0px;
+        right: 5rem;
+    }
+
+    .banner__profile--img {
+        margin-top: 1rem;
+        position: relative;
+        top: 0px; left: 80px;
+        background-size: lenght;
+    }
+
+    .banner__Gabriel {
+        color: var(--third-color);
+        font-size: 7.5rem;
+    }
+    
+    .banner__soy {
+        font-size: 5rem;
+    }
+
+}

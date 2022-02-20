@@ -1,0 +1,130 @@
+:root {
+    --first-color: #03051C;
+    --second-color: #242635;
+    --third-color: #34B0BE;
+    --fourth-color: #D1CECA;
+    --fifth-color: #FFFFFF;
+    --sixth-color: #000000;
+    --font-color: #D1CECA;
+    --font-weight-semibold: 600;
+    --font-weight-regular: 400;
+    --mobile-font-family: 'Montserrat', sans-serif;
+    --mobile-font-size: 16px;
+    --mobile-h1-font-size: 50px;
+    --mobile-h2-font-size: 32px;
+    --mobile-h3-font-size: 18px;
+    --mobile-h4-font-size: 16px;
+    --mobile-h5-font-size: 18px;
+    --desktop-font-family: 'Montserrat', sans-serif;
+    --desktop-font-size: 18px;
+    --desktop-h1-font-size: 150px;
+    --desktop-h2-font-size: 50px;
+    --desktop-h3-font-size: 45px;
+    --desktop-h4-font-size: 18px;
+    --desktop-h5-font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* RESPONSIVE FOR 0PX UP TO xPX VIEW WIDTH */
+
+body {
+    background-color: var(--first-color);
+    font-family: var(--mobile-font-family);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--mobile-font-size);
+    color: var(--font-color);
+    margin-top: 4rem;
+}
+
+h1 {
+    font-size: var(--mobile-h1-font-size);
+    font-weight: var(--font-weight-semibold);
+}
+
+h2 {
+    font-size: var(--mobile-h2-font-size);
+    font-weight: var(--font-weight-semibold);
+}
+
+h3 {
+    font-size: var(--mobile-h3-font-size);
+    font-weight: var(--font-weight-regular);
+}
+
+h4 {
+    font-size: var(--mobile-h4-font-size);
+    font-weight: var(--font-weight-semibold);
+}
+
+h5 {
+    font-size: var(--mobile-h5-font-size);
+    font-weight: var(--font-weight-regular);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE FOR 600PX UP TO 768PX VIEW WIDTH */
+/* MOBILE */
+
+@media only screen and (min-width: 600px) {
+
+    
+
+}
+
+
+/* RESPONSIVE FOR 768PX UP TO 992pxPX VIEW WIDTH */
+/* MOBILE */
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin-top: 5rem;
+    }
+
+}
+
+
+/* RESPONSIVE FOR 992PX AND UP VIEW WIDTH */
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+
+    body {
+        font-family: var(--desktop-font-family);
+        font-size: var(--desktop-font-size);
+        margin-top: 8rem;
+    }
+    
+    h1 {
+        font-size: var(--desktop-h1-font-size);
+    }
+    
+    h2 {
+        font-size: var(--desktop-h2-font-size);
+    }
+    
+    h3 {
+        font-size: var(--desktop-h3-font-size);
+    }
+    
+    h4 {
+        font-size: var(--desktop-h4-font-size);
+    }
+    
+    h5 {
+        font-size: var(--desktop-h5-font-size);
+    }
+
+}

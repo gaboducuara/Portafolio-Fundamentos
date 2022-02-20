@@ -1,0 +1,314 @@
+@import url('./main.css');
+
+/* RESPONSIVE FOR 0PX UP TO 712PX VIEW WIDTH */
+/* MOBILE */
+
+section[id] {
+    scroll-margin-top: 5rem;
+}
+
+section {
+    width: 90%;
+    max-width: 550px;
+    margin: 3rem auto 0 auto;
+    text-align: center;
+}
+
+section:last-of-type {
+    margin-bottom: 3rem;
+}
+
+section h2:first-child {
+    color: var(--third-color);
+    margin-bottom: 1.5rem;
+}
+
+#services-section {
+    width: 95%;
+    max-width: 100%;
+    margin-right: 0;
+}
+
+#services-section>h2 {
+    margin-right: 5%;
+}
+
+.services__container {
+    overflow-x: scroll;
+}
+
+.services__container::-webkit-scrollbar {
+    display: none;
+}
+
+.services__content {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.services__product {
+    background-color: var(--fifth-color);
+    background-image: url(../assets/vectors/Ellipse14.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 220px;
+    margin-right: .5rem;
+    padding: 1.5rem 0;
+    border-radius: .5rem;
+}
+
+.services__product:last-child {
+    margin-right: 5vw;
+}
+
+.skills__content--info {
+    height: 1.7rem;
+    margin-bottom: .3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__content--info-1, .skills__content--info-3 {
+    width: 80%;
+}
+
+.skills__content--info-2 {
+    width: 95%;
+}
+
+.services__h2--product {
+    font-size: var(--mobile-h3-font-size);
+    color: var(--sixth-color);
+    margin-bottom: 1rem;
+}
+
+.skills__h2--skill-title {
+    font-size: var(--mobile-h3-font-size);
+}
+
+.skills__h2--skill-percent {
+    font-size: var(--desktop-h5-font-size);
+    color: var(--third-color);
+    align-self: end;
+    visibility: hidden;
+}
+
+@keyframes displayPercent {
+    0% { visibility: hidden; }
+    100% { visibility: hidden; }
+}
+
+.skills__bar {
+    background-color: var(--fifth-color);
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.skills__bar--80p, .skills__bar--95p, .skills__bar--80p {
+    background-color: var(--third-color);
+    width: 0;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+@keyframes barAnimation80 {
+    0% { max-width: 0; }
+    100% { max-width: 80%; }
+}
+
+@keyframes barAnimation95 {
+    0% { max-width: 0; }
+    100% { max-width: 95%; }
+}
+
+#myportfolio-section {
+    width: 95%;
+    max-width: 100%;
+    margin-right: 0;
+}
+
+#myportfolio-section>h2 {
+    margin-right: 5%;
+}
+
+.myportfolio__container {
+    overflow-x: scroll;
+}
+
+.myportfolio__container::-webkit-scrollbar {
+    
+    display: none;
+}
+
+.myportfolio__content {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.myportfolio__img {
+    width: 220px;
+    margin-right: 1rem;
+}
+
+.myportfolio__img:last-child {
+    margin-right: 5vw;
+}
+
+.contact__content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__media {
+    background-color: #FFFFFF;
+    background-image: url(../assets/vectors/Ellipse14.svg);
+    background-size: 110%;
+    background-position: center -2rem;
+    background-repeat: no-repeat;
+    width: 11rem;
+    height: 10rem;
+    padding-bottom: 1.5rem;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.contact__media:first-child {
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.contact__media:last-child {
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+.contact__media>img {
+    width: 60px;
+    height: 60px;
+}
+
+.contact__media>h4 {
+    color: var(--sixth-color);
+    margin: .5rem 0 .2rem 0;
+}
+
+.contact__media>p {
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE FOR 712PX UP TO 992PX VIEW WIDTH */
+/* MOBILE */
+
+@media only screen and (min-width: 712px) {
+
+    #services-section {
+        max-width: 95%;
+        margin-right: auto;
+    }
+
+    #services-section>h2 {
+        margin-right: 0;
+    }
+
+    .services__container {
+        overflow-x: unset;
+    }
+
+    .services__product:last-child {
+        margin-right: 0;
+    }
+
+    .contact__content {
+        margin-top: 6rem;
+    }
+
+}
+
+/* RESPONSIVE FOR 992PX UP TO 1786PX VIEW WIDTH */
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+
+    #services-section {
+        max-width: 90%;
+        margin-right: auto;
+    }
+    
+    .services__content {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .services__container {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .services__product {
+        padding: 2rem 2rem;
+
+    }
+
+    .services__product:nth-child(2) {
+        margin: 0;
+    }
+
+    .myportfolio__container {
+        padding-bottom: .5rem;
+    }
+    
+    .myportfolio__container::-webkit-scrollbar {
+        background-color: transparent;
+        height: .5rem;
+        display: initial;
+    }
+    
+    .myportfolio__container::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 1rem;
+    }
+    
+    .myportfolio__container::-webkit-scrollbar-thumb {
+        background-color: var(--third-color);
+        border-radius: 1rem;
+    }
+
+    .myportfolio__img {
+        width: 390px;
+    }
+
+}
+
+/* RESPONSIVE FOR 1786PX AND UP VIEW WIDTH */
+/* DESKTOP */
+
+@media only screen and (min-width: 1786px) {
+
+    #myportfolio-section {
+        margin-right: auto;
+    }
+
+    #myportfolio-section>h2 {
+        margin-right: 0;
+    }
+
+    .myportfolio__container {
+        max-width: 95%;
+        overflow-x: unset;
+        margin: auto;
+    }
+
+    .myportfolio__img:last-child {
+        margin-right: 0;
+    }
+
+}
